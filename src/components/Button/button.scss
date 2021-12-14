@@ -1,0 +1,131 @@
+@import '../../scss/vars';
+
+.btn {
+    display: inline-block;
+    width: fit-content;
+    border: 0;
+    background: none;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: $secondary;
+
+    &--outline {
+        padding: 8px 12px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+
+        transition: background 0.2s linear, color 0.2s linear;
+    }
+
+    &--outline:hover {
+        background: #eee;
+        color: $primary;
+    }
+
+    &--big {
+        padding: 16px 24px;
+        font-size: 20px;
+    }
+
+    &--fill {
+        padding: 8px 12px;
+        border: 1px solid transparent;
+        border-radius: 10px;
+        color: $primary;
+        background-color: $secondary;
+        transition: box-shadow 0.2s linear;
+
+        .cart-btn {
+            display: flex;
+            align-items: center;
+            &__counter {
+                margin-left: 10px;
+            }
+            &__path {
+                stroke: $primary;
+            }
+        }
+
+        &:hover {
+            box-shadow: 0 0 10px 10px rgba($secondary, 0.5);
+        }
+    }
+
+    &--form {
+        width: 100%;
+        padding: 12px;
+        font-size: 18px;
+        border-radius: 0;
+    }
+
+    &--delete {
+        margin-left: 10px;
+
+        &:hover .delete-path {
+            stroke: tomato;
+        }
+
+        & .delete-path {
+            stroke: $secondary;
+            transition: stroke 0.2s linear;
+        }
+    }
+
+    &--burger {
+        padding: 0;
+        display: none;
+        width: 30px;
+        height: 25px;
+        position: absolute;
+        top: 27px;
+        right: 20px;
+        z-index: 10;
+
+        cursor: pointer;
+        &:hover {
+            .burger__item {
+                transform: scale(1.3);
+            }
+        }
+
+        &.active {
+            .burger__item {
+                &:nth-child(2) {
+                    display: none;
+                }
+
+                &:nth-child(1) {
+                    transform: rotate(45deg) translateY(7px);
+                }
+
+                &:nth-child(3) {
+                    transform: rotate(-45deg) translateY(-7px);
+                }
+            }
+        }
+
+        .burger__item {
+            display: block;
+            width: 100%;
+            background-color: $secondary;
+            height: 3px;
+            margin-bottom: 8px;
+            border-radius: 20px;
+            transition: transform 0.2s linear;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+// media
+@media (max-width: $sm) {
+    .btn {
+        &--burger {
+            display: block;
+        }
+    }
+}

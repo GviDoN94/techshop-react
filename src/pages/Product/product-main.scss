@@ -1,0 +1,49 @@
+@import '../../scss/vars';
+.product-main {
+    display: flex;
+
+    &__image {
+        flex: 1 0 auto;
+        flex-basis: 40%;
+        margin: 0;
+        padding: 0;
+        width: 300px;
+    }
+
+    &__text-block {
+        flex-basis: 60%;
+        padding: 30px;
+        line-height: 1.5;
+    }
+
+    &__title {
+        margin: 0;
+        padding: 0;
+    }
+
+    &__footer {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+// media
+@media (max-width: $md) {
+    .product-main {
+        flex-wrap: wrap;
+        &__image {
+            flex-basis: 100%;
+        }
+        &__text-block {
+            flex-basis: 100%;
+        }
+    }
+}
+
+@media (max-width: $sm) {
+    .product-main {
+        &__footer {
+            flex-direction: column;
+        }
+    }
+}

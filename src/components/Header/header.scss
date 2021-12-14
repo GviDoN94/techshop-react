@@ -1,0 +1,68 @@
+@import '../../scss/vars';
+
+.header {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $secondary;
+    border-bottom: 1px solid #eee;
+
+    &__user {
+        display: flex;
+        align-items: center;
+    }
+    &__logo a {
+        font-size: 30px;
+        text-decoration: none;
+        color: $secondary;
+    }
+
+    &__user-email {
+        margin-right: 20px;
+    }
+}
+
+// media
+@media (max-width: $sm) {
+    .header {
+        &__user {
+            display: none;
+        }
+        &.active {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 5;
+            background-color: $primary;
+
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .header__logo {
+                position: absolute;
+                top: 27px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            .header__user {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                a {
+                    margin: 0;
+                    margin-bottom: 20px;
+                }
+            }
+
+            .header__user-email {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

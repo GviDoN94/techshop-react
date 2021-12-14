@@ -1,0 +1,21 @@
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__content {
+        display: flex;
+        align-items: center;
+    }
+    &__image {
+        width: 50px;
+    }
+
+    &__right-side {
+        display: flex;
+        align-items: center;
+    }
+    &__price {
+        white-space: nowrap;
+    }
+}
