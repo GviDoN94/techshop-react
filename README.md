@@ -2,7 +2,7 @@
 
 ![React](https://img.shields.io/badge/React-17.x-brightgreen?logo=react) ![React](https://img.shields.io/badge/Redux-4.x-blue?logo=redux)
 
-TechShop is a React-based web application for an electronics store. It allows users to register, log in, browse products, add items to the cart, and complete their orders. The application uses Redux for state management and supports saving user data in `localStorage`.
+**TechShop** is a React-based web application for an electronics store. It allows users to register, log in, browse products, add items to the cart, and complete their orders. The application uses Redux for state management and supports saving user data in `localStorage`.
 
 **You can view it [here](https://techshop.gvidon94.ru/)**
 
