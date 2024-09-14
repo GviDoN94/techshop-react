@@ -1,6 +1,6 @@
 # TechShop
 
-![React](https://img.shields.io/badge/React-17.x-brightgreen?logo=react) ![React](https://img.shields.io/badge/Redux-4.x-blue?logo=redux)
+![React](https://img.shields.io/badge/React-17.x-brightgreen?logo=react) ![React](https://img.shields.io/badge/Redux-4.x-brightgreen?logo=redux) ![React](https://img.shields.io/badge/React_Router-6.x-brightgreen?logo=reactrouter) ![Vite](https://img.shields.io/badge/SCSS-blue.svg?logo=sass) ![Vite](https://img.shields.io/badge/Prettier-blue.svg?logo=prettier)
 
 **TechShop** is a React-based web application for an electronics store. It allows users to register, log in, browse products, add items to the cart, and complete their orders. The application uses Redux for state management and supports saving user data in `localStorage`.
 
@@ -21,6 +21,7 @@
 -   **[React-Router](https://reactrouter.com/)**: For handling routing within the application.
 -   **[Redux-Thunk](https://github.com/reduxjs/redux-thunk)**: Middleware for handling asynchronous actions in Redux.
 -   **[SCSS](https://sass-lang.com/)**: CSS preprocessor for styling.
+-   **[Prettier](https://prettier.io/)** — Tool for code formatting.
 
 ## Installation and Setup
 
