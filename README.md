@@ -1,6 +1,6 @@
 # TechShop
 
-![React](https://img.shields.io/badge/React-17.x-brightgreen?logo=react) ![React](https://img.shields.io/badge/Redux-4.x-brightgreen?logo=redux) ![React](https://img.shields.io/badge/React_Router-6.x-brightgreen?logo=reactrouter) ![Vite](https://img.shields.io/badge/SCSS-blue.svg?logo=sass) ![Vite](https://img.shields.io/badge/Prettier-blue.svg?logo=prettier)
+![React](https://img.shields.io/badge/React-17.x-brightgreen?logo=react) ![Redux](https://img.shields.io/badge/Redux-4.x-brightgreen?logo=redux) ![React-Router](https://img.shields.io/badge/React_Router-6.x-brightgreen?logo=reactrouter) ![SCSS](https://img.shields.io/badge/SCSS-blue.svg?logo=sass) ![Prettier](https://img.shields.io/badge/Prettier-blue.svg?logo=prettier)
 
 **TechShop** is a React-based web application for an electronics store. It allows users to register, log in, browse products, add items to the cart, and complete their orders. The application uses Redux for state management and supports saving user data in `localStorage`.
 
